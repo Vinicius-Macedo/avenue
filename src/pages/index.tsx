@@ -15,7 +15,10 @@ export default function Home() {
     <>
       <Header />
       <main className="overflow-hidden pt-46">
-        <DefaultMarginSection className="flex flex-col-reverse lg:flex-row items-center w-full justify-between">
+        <DefaultMarginSection
+          hasNoEffect={true}
+          className="flex flex-col-reverse lg:flex-row items-center w-full justify-between"
+        >
           <article className="max-w-[635px] flex flex-col md:items-center gap-8 lg:gap-16">
             <h1 className="font-montserrat font-semibold  big-title">
               Invista globalmente com assessoria especializada
