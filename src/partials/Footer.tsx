@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <DefaultMarginSection
+        hasNoEffect={true}
         containerClassName="bg-greenDark"
         className="text-white flex flex-col gap-16"
       >
@@ -18,7 +19,7 @@ export default function Footer() {
           loader={imageLoader}
           unoptimized
         />
-        <div className="grid grid-cols-3 gap-32">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-32">
           <article>
             <p>© 2023 Avenue</p>
             <p>

@@ -15,8 +15,8 @@ export default function Home() {
     <>
       <Header />
       <main className="overflow-hidden pt-46">
-        <DefaultMarginSection className="flex items-center justify-between">
-          <article className="max-w-[635px] flex flex-col gap-16">
+        <DefaultMarginSection className="flex flex-col-reverse lg:flex-row items-center w-full justify-between">
+          <article className="max-w-[635px] flex flex-col md:items-center gap-8 lg:gap-16">
             <h1 className="font-montserrat font-semibold  big-title">
               Invista globalmente com assessoria especializada
             </h1>
@@ -40,6 +40,7 @@ export default function Home() {
           containerClassName="relative bg-[#112F27]"
           className="flex justify-center xl:justify-end"
         >
+          <div className="bg-dark w-full h-full absolute left-0 top-0"></div>
           <Image
             src={"/img/bg-image.png"}
             alt={""}
@@ -50,10 +51,10 @@ export default function Home() {
             loader={imageLoader}
           />
           <div className="flex flex-col items-center gap-16">
-            <h2 className="font-montserrat font-semibold text-green text-[28.43px]">
+            <h2 className="font-montserrat font-semibold text-green text-[28.43px] text-center">
               Tenha acesso à vantagens:
             </h2>
-            <div className="relative grid grid-cols-3 auto-rows-fr w-full max-w-[748px] gap-17">
+            <div className="relative grid md:grid-cols-2 lg:grid-cols-3 auto-rows-fr w-full max-w-[748px] gap-17">
               <IconTitleTextCard
                 imgAdress={"./img/card-icons-01.svg"}
                 imgAlt={"Icone de fone de ouvido"}
@@ -103,7 +104,7 @@ export default function Home() {
                 }
               />
             </div>
-            <div className="flex gap-8">
+            <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
               <a
                 className="text rounded-full border bg-white border-black py-4 px-8 flex gap-4 justify-center items-center font-semibold"
                 href="https://pit.avenue.us/onboarding/foreign-finder/AVE817112"
@@ -127,11 +128,11 @@ export default function Home() {
           <div className="flex flex-col items-center gap-32">
             <div className="flex flex-col items-center">
               <p className="text-[28.43px] leading-5">Investimentos</p>
-              <h2 className="font-bold text-[36.43px]">
+              <h2 className="font-bold text-center text-[1.7769rem] first:md:text-[36.43px]">
                 Seu dinheiro tão global quanto você
               </h2>
             </div>
-            <div className="grid grid-cols-4 gap-16 max-w-[1024px]">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 max-w-[1024px]">
               <InvestimentsCards
                 imgAdress={"./img/investiment-card-01.svg"}
                 imgAlt={"Icone de moeda"}
@@ -169,7 +170,7 @@ export default function Home() {
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection className="flex flex-col gap-16 items-center">
-          <div className="flex gap-32">
+          <div className="flex flex-col lg:flex-row gap-32">
             <Image
               src={"./img/mulher-segurando-tablet.png"}
               alt={"Mulher segurando laptop sorrindo"}
@@ -178,7 +179,7 @@ export default function Home() {
               width={445}
               height={426}
             />
-            <article className="bg-greenDark text-white p-16 rounded-xl flex flex-col gap-16 justify-center w-full max-w-[350px]">
+            <article className="bg-greenDark text-white p-16 rounded-xl flex flex-col gap-16 justify-center w-full lg:max-w-[350px]">
               <p className="flex gap-8 items-center font-semibold">
                 <Image
                   src={"./img/lampada.svg"}
@@ -203,10 +204,10 @@ export default function Home() {
           </div>
           <TwoButtons />
         </DefaultMarginSection>
-        <DefaultMarginSection className="grid grid-cols-2 gap-32 items-center">
+        <DefaultMarginSection className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-32 items-center">
           <article className="justify-self-center max-w-[270px]">
-            <p className="font-montserrat font-semibold  big-title leading-[3rem]">
-              Ainda com dúvidas
+            <p className="font-montserrat font-semibold  big-title leading-[3rem] text-center">
+              Ainda com dúvidas?
             </p>
             <p className="font-montserrat">Veja todas as dúvidas frequentes</p>
           </article>
